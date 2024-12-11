@@ -1,4 +1,5 @@
-:root{
+/* Variables de colores */
+:root {
     --e-global-color-primary: #006837;
     --e-global-color-secondary: #FFFFFF;
     --e-global-color-text: #333333;
@@ -7,73 +8,155 @@
     --e-global-color-322680a6: #F7F7F7;
     --e-global-color-17ab7c36: #006837CC;
 
-    --size-0:0;
-    --size-s:2vh;
-    --size-m:4vh;
-    --size-l:6vh;
-    --size-xl:8vh;
-    --size-xxl:10vh;
+    --size-0: 0;
+    --size-s: 0.5rem;
+    --size-m: 1rem;
+    --size-l: 1.5rem;
+    --size-xl: 2rem;
+    --size-xxl: 2.5rem;
 }
-html, body{
+
+/* Estilo general */
+html, body {
     width: 100%;
     height: 100%;
-}
-body {
     margin: var(--size-0);
     padding: var(--size-0);
     font-family: Arial, Helvetica, sans-serif;
     gap: var(--size-0);
-
 }
+
+body {
+    background-color: var(--e-global-color-322680a6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navegación */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--e-global-color-primary);
     height: var(--size-xxl);
+    width: 100%;
+    padding: 0 var(--size-m);
 }
 
-nav a{
+nav a {
     text-decoration: none;
+    color: var(--e-global-color-secondary);
+    font-size: var(--size-m);
+    text-align: center;
 }
 
-nav a:hover{
+nav a:hover {
     cursor: pointer;
+    color: var(--e-global-color-accent);
 }
 
 .optionnav {
     display: grid;
     align-items: center;
-    justify-content: space-between;
-    grid-template-columns: 33% 33% 33%;
-    gap: var(--size-xl); 
-    font-size: var(--size-l);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-l);
 }
 
 .containelogo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
     height: 100%;
-  
 }
 
-.content_formulario{
-    width: 100%;
-    height: 100%;
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
+.logo {
+    max-height: var(--size-xxl);
 }
-form{
-    width: 60%;
-    height: 90%;
+
+/* Diseño moderno para el formulario */
+.content_formulario {
+    background-color: var(--e-global-color-secondary);
+    padding: var(--size-l);
+    border-radius: var(--size-s);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 40rem;
+    border: 1px solid var(--e-global-color-40eb6205);
+    margin-top: var(--size-l);
+}
+
+h1 {
+    font-size: var(--size-xl);
+    color: var(--e-global-color-primary);
     text-align: center;
-    border: solid;
-    
+    margin-bottom: var(--size-m);
 }
 
+label {
+    display: block;
+    font-size: var(--size-m);
+    color: var(--e-global-color-40eb6205);
+    margin-bottom: var(--size-s);
+    font-weight: bold;
+}
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: var(--size-s);
+    margin-bottom: var(--size-m);
+    border: 1px solid var(--e-global-color-40eb6205);
+    border-radius: var(--size-s);
+    font-size: var(--size-m);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: var(--e-global-color-322680a6);
+    color: var(--e-global-color-text);
+}
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+    border-color: var(--e-global-color-accent);
+    outline: none;
+    box-shadow: 0 0 5px var(--e-global-color-accent);
+    background-color: var(--e-global-color-secondary);
+}
 
+textarea {
+    resize: none;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: var(--size-m);
+    background-color: var(--e-global-color-primary);
+    color: var(--e-global-color-secondary);
+    border: none;
+    border-radius: var(--size-s);
+    font-size: var(--size-m);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: var(--e-global-color-17ab7c36);
+}
+
+/* Espaciado general */
+input, textarea {
+    margin-top: var(--size-s);
+}
+
+.content_formulario {
+    padding-top: var(--size-m);
+}
