@@ -1,0 +1,89 @@
+:root {
+    --e-global-color-primary: #006837;
+    --e-global-color-secondary: #FFFFFF;
+    --e-global-color-text: #333333;
+    --e-global-color-accent: #99CC33;
+    --e-global-color-40eb6205: #666666;
+    --e-global-color-322680a6: #F7F7F7;
+    --e-global-color-17ab7c36: #006837CC;
+
+    --size-0: 0;
+    --size-s: 2vh;
+    --size-m: 4vh;
+    --size-l: 6vh;
+    --size-xl: 8vh;
+    --size-xxl: 10vh;
+
+    --sizeR-s: 0.313rem;
+    --sizeR-m: 0.625rem;
+    --sizeR-l: 0.938rem;
+    --sizeR-xl: 1.25rem;
+
+}
+
+body {
+    padding: var(--size-0);
+    font-family: Arial, Helvetica, sans-serif;
+    gap: var(--size-0);
+    margin: var(--size-0);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--e-global-color-primary);
+    height: var(--size-xxl);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--e-global-color-text);
+}
+
+nav a:hover {
+    cursor: pointer;
+}
+
+.optionnav {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: 33% 33% 33%;
+    gap: var(--size-xl);
+    font-size: var(--size-l);
+    margin-right: 4rem;
+}
+
+.containelogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 100%;
+
+}
+
+.logo {
+    margin-top: 0.5rem;
+    height: 80%;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container img{
+    border-radius: 10px;
+}
+
+.container_target {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
