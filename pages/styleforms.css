@@ -60,7 +60,7 @@ nav a {
 
 nav a:hover {
     cursor: pointer;
-    background-color: var(--e-global-color-accent2);
+    background-color: var(--e-global-color-accent);
 }
 
 .optionnav {
@@ -95,6 +95,7 @@ nav a:hover {
 .contain{
     display: flex;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 .content_formulario {
@@ -178,6 +179,7 @@ input[type="button"]:hover {
     background-color: var(--e-global-color-17ab7c36);
 }
 
+
 /* Espaciado general */
 input, textarea {
     margin-top: var(--size-s);
@@ -185,6 +187,23 @@ input, textarea {
 
 .content_formulario {
     padding-top: var(--size-m);
+}
+
+
+footer{
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    background-color: #afafaf;
+}
+
+footer button{
+    padding: 10px;
+    border-radius: var(--sizeR-m);
+    border: none;
+    background-color: var(--e-global-color-accent);
+    color: #FFFFFF;
 }
 /* Estilo para navegadores Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
