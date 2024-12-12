@@ -24,7 +24,9 @@ html, body {
     padding: var(--size-0);
     font-family: Arial, Helvetica, sans-serif;
     gap: var(--size-0);
-}
+
+    background-image: url("mision1/ASSETS/UIS entrada.png");
+
 
 body {
     background-color: var(--e-global-color-322680a6);

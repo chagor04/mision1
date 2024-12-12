@@ -1,0 +1,125 @@
+:root {
+
+/* UIS global color palette */    
+    --e-global-color-primary: #006837;
+    --e-global-color-secondary: #FFFFFF;
+    --e-global-color-text: #333333;
+    --e-global-color-accent: #99CC33;
+    --e-global-color-40eb6205: #666666;
+    --e-global-color-322680a6: #F7F7F7;
+    --e-global-color-17ab7c36: #006837CC;
+    --e-global-color-black: #000000;
+    --e-global-color-lightgray:#f7f7f75c;
+
+
+    /* Standard sizes and measurements */
+
+    /*Measurements in vh*/    
+    --size-0: 0;
+    --size-s: 2vh;     /*10.92px*/
+    --size-m: 4vh;     /*21.84px*/
+    --size-l: 6vh;     /*32.76px*/
+    --size-xl: 8vh;    /*43.68px*/
+    --size-xxl: 10vh;  /*54.6px*/
+
+    /*Measurements in rem*/    
+    --sizeR-s: 0.313rem;  /*5px */
+    --sizeR-m: 0.625rem;  /*10px*/
+    --sizeR-l: 0.938rem;  /*15px*/
+    --sizeR-xl: 1.25rem;  /*20px*/
+
+
+    /*Measurements in percentage*/
+    --sizePorcen-xs: 10%;
+    --sizePorcen-s: 20%;
+    --sizePorcen-m: 30%;
+    --sizePorcen-l: 40%;
+    --sizePorcen-xl: 50%;
+    --sizePorcen-xxl: 60%;
+    --sizePorcen-xxxl: 70%;
+    --sizePorcen-4xl: 80%;
+    --sizePorcen-5xl: 90%;
+    --sizePorcen-6xl: 100%;
+
+}
+
+
+/* Inicio navbar */
+nav{
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color:var(--e-global-color-322680a6);
+height: var(--size-xl);
+position: relative; 
+width: var(--sizePorcen-6xl);
+height:var(--size-xl);
+}
+
+/*pendiente quitar*/
+nav a {
+text-decoration: none;
+color: var(--e-global-color-40eb6205);
+}
+
+/**validar para quitar*/
+nav a:hover {
+cursor: pointer;
+}
+
+.optionnav {
+display: grid;
+align-items: center;
+justify-content: space-around;
+grid-template-columns: 33% 33% 33%;
+font-size: var(--size-m);
+background-color: var(--e-global-color-black);
+width: var(--sizePorcen-l);
+
+}
+
+.containelogo {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: var(--sizeR-m); 
+height: var(--sizePorcen-6xl);
+
+}
+
+.logo {
+margin: auto; /*pendiente quitar*/
+margin-left: 2rem;
+height: var(--sizePorcen-5xl);
+border-radius: var(--sizeR-l); 
+}
+
+/* carrusel */
+.carrusel{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto; /*pendinte quitar*/
+background-color: rgba(255, 255, 255, 0.596);/*estandarizar*/
+width: var(--sizePorcen-6xl);
+border: 2px thick rgba(255, 255, 255, 0.596); /*estandarizar*/
+box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 30px rgba(255, 255, 255, 0.2);
+border-radius: 4px;  
+
+}
+
+/* clases personalizadas */
+
+/* text decoration none + cursor pointer */
+.textdcurnonepoint{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* margin genral auto */
+.marginaut{
+    margin: auto;
+}

@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --e-global-color-primary: #006837;
     --e-global-color-secondary: #FFFFFF;
     --e-global-color-text: #333333;
@@ -22,7 +22,7 @@
     --sizeR-l: 0.938rem;
     --sizeR-xl: 1.25rem;
 
-}
+} */
 
 body {
     padding: var(--size-0);
@@ -30,14 +30,14 @@ body {
     gap: var(--size-0);
     margin: var(--size-0);
     backdrop-filter: blur(4px);
-    background-image: url('/ASSETS/UIS entrada.png');
+    background-image: url('/mision1/ASSETS/UIS entrada.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
 }
 
-nav {
+/* nav {
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -84,7 +84,7 @@ nav a:hover {
     margin-left: 2rem;
     height: 90%;
      border-radius: var(--sizeR-l); 
-}
+} */
 
 /* carruse */
 
@@ -144,8 +144,9 @@ ul.slider li:target {
 }
    
 .menu{
-    text-align: center;
     margin: var(--sizeR-xl);
+    text-align: center;
+
 }
 
 .menu li{
