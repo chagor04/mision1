@@ -1,4 +1,4 @@
-# TALENTOTECH
+# TALENTOTECH <img src="ASSETS/Talento-Tech.jpg" alt="Descripción de la imagen" width="80" height="80">
 
 # Taller de La Misión 1 - Programación Básica
 
