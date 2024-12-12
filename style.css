@@ -1,8 +1,9 @@
-:root {
+/* :root {
     --e-global-color-primary: #006837;
     --e-global-color-secondary: #FFFFFF;
     --e-global-color-text: #333333;
     --e-global-color-accent: #99CC33;
+    --e-global-color-accent2: #8fc91a;
     --e-global-color-40eb6205: #666666;
     --e-global-color-322680a6: #F7F7F7;
     --e-global-color-17ab7c36: #006837CC;
@@ -21,7 +22,7 @@
     --sizeR-l: 0.938rem;
     --sizeR-xl: 1.25rem;
 
-}
+} */
 
 body {
     padding: var(--size-0);
@@ -30,13 +31,16 @@ body {
     margin: var(--size-0);
     backdrop-filter: blur(4px);
     background-image: url('ASSETS/UIS entrada.png');
+
+    background-image: url('/mision1/ASSETS/UIS entrada.png');
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
 }
 
-nav {
+/* nav {
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -49,22 +53,24 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--e-global-color-40eb6205);
+    color: var(--e-global-color-322680a6);
+    background-color: var(--e-global-color-text);
+    padding: 4px;
 }
 
 nav a:hover {
     cursor: pointer;
+    background-color: var(--e-global-color-accent2);
 }
 
 .optionnav {
     display: grid;
     align-items: center;
-    justify-content: space-around;
-    grid-template-columns: 33% 33% 33%;
-    font-size: var(--size-m);
-    background-color: var(--e-global-color-black);
+    text-align: center;
+    grid-template-columns: 30% 30% 30%;
+    font-size: 17px;
+    grid-area: 10px;
     width: 40%;
-
 }
 
 .containelogo {
@@ -81,7 +87,7 @@ nav a:hover {
     margin-left: 2rem;
     height: 90%;
      border-radius: var(--sizeR-l); 
-}
+} */
 
 /* carruse */
 
@@ -141,8 +147,9 @@ ul.slider li:target {
 }
    
 .menu{
-    text-align: center;
     margin: var(--sizeR-xl);
+    text-align: center;
+
 }
 
 .menu li{
@@ -189,10 +196,50 @@ ul.slider li:target {
     height: 25rem;
     width: auto;
     margin: auto;
-   
 }
 
 .routinfo{
     margin-top: 8%;
 }
 
+.routinfo button{
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--e-global-color-17ab7c36);
+    color: #FFFFFF;
+}
+
+.routinfo button:hover{
+    background-color: var(--e-global-color-primary);
+}
+
+.ver_mas{
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: var(--sizeR-m);
+    border: none;
+    background-color: var(--e-global-color-17ab7c36);
+    color: #FFFFFF;
+}
+
+.ver_mas:hover{
+    background-color: var(--e-global-color-primary);
+}
+
+footer{
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #afafaf;
+}
+
+footer button{
+    padding: 10px;
+    border-radius: var(--sizeR-m);
+    border: none;
+    background-color: var(--e-global-color-accent);
+    color: #FFFFFF;
+}
