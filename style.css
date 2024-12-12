@@ -6,6 +6,8 @@
     --e-global-color-40eb6205: #666666;
     --e-global-color-322680a6: #F7F7F7;
     --e-global-color-17ab7c36: #006837CC;
+    --e-global-color-black: #000000;
+    --e-global-color-lightgray:#f7f7f75c;
 
     --size-0: 0;
     --size-s: 2vh;
@@ -26,19 +28,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     gap: var(--size-0);
     margin: var(--size-0);
+    backdrop-filter: blur(4px);
+    background-image: url('/ASSETS/UIS entrada.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 nav {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--e-global-color-primary);
-    height: var(--size-xxl);
+    background-color:var(--e-global-color-322680a6);
+    height: var(--size-xl);
+    position: relative; 
+    width: 100%;
+    height:var(--size-xl);
 }
 
 nav a {
     text-decoration: none;
-    color: var(--e-global-color-text);
+    color: var(--e-global-color-40eb6205);
 }
 
 nav a:hover {
@@ -50,40 +61,138 @@ nav a:hover {
     align-items: center;
     justify-content: space-around;
     grid-template-columns: 33% 33% 33%;
-    gap: var(--size-xl);
-    font-size: var(--size-l);
-    margin-right: 4rem;
+    font-size: var(--size-m);
+    background-color: var(--e-global-color-black);
+    width: 40%;
+
 }
 
 .containelogo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: var(--sizeR-m); 
     height: 100%;
 
 }
 
 .logo {
-    margin-top: 0.5rem;
-    height: 80%;
-    border-radius: 5px;
+    margin: auto;
+    margin-left: 2rem;
+    height: 90%;
+     border-radius: var(--sizeR-l); 
 }
 
+/* carruse */
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 100%;
+    border: 2px thick rgba(255, 255, 255, 0.596);
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.4),
+        0 0 30px rgba(255, 255, 255, 0.2);
+    border-radius: 4px;  
+
+}
+  /* Contenedor de slider */ 
+
+ul, li {
+      padding: var(--size-0);
+      margin: var(--size-0);
+      list-style: none;
+}
+  
+ul.slider{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+  
+ul.slider li { 
+      position: absolute;
+      left: var(--size-0);
+      top: var(--size-0);
+      opacity: 0; 
+      width: inherit; 
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+}/* carrusel */
+  
+ul.slider li img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin: auto; 
+}
+   
+ul.slider li:first-child {
+      opacity: 1; 
+}
+  
+ul.slider li:target {
+      opacity: 1; 
+}
+   
+.menu{
+    text-align: center;
+    margin: var(--sizeR-xl);
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: var(--sizeR-m);
+    width: var(--sizeR-xl);
+    height: var(--sizeR-xl);
+    font-size:var(--sizeR-xl);
+    border-radius: 100%;
+}
+
+/* cards */
 
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: var(--sizeR-xl);
+    gap:4rem;
 }
 
 .container img{
-    border-radius: 10px;
+    border-radius: var(--sizeR-l);
+    height: 80%;
+    width: auto;
+    margin: auto;
 }
 
 .container_target {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    padding: 0.1%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    border-radius: var(--sizeR-l);
+    background: var( --e-global-color-lightgray);
+    height: 25rem;
+    width: auto;
+    margin: auto;
+   
 }
+
+.routinfo{
+    margin-top: 8%;
+}
+
