@@ -29,7 +29,7 @@ body {
     gap: var(--size-0);
     margin: var(--size-0);
     backdrop-filter: blur(4px);
-    background-image: url('/ASSETS/UIS entrada.png');
+    background-image: url('ASSETS/UIS entrada.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
