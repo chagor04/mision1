@@ -1,37 +1,9 @@
-/* Variables de colores */
-:root {
-    --e-global-color-primary: #006837;
-    --e-global-color-secondary: #FFFFFF;
-    --e-global-color-text: #333333;
-    --e-global-color-accent: #99CC33;
-    --e-global-color-40eb6205: #666666;
-    --e-global-color-322680a6: #F7F7F7;
-    --e-global-color-17ab7c36: #006837CC;
-    --e-global-color-black: #000000;
-    --e-global-color-lightgray:#f7f7f75c;
 
-    --size-0: 0;
-    --size-s: 2vh;
-    --size-m: 4vh;
-    --size-l: 6vh;
-    --size-xl: 8vh;
-    --size-xxl: 10vh;
-
-    --sizeR-s: 0.313rem;
-    --sizeR-m: 0.625rem;
-    --sizeR-l: 0.938rem;
-    --sizeR-xl: 1.25rem;
-
+.contain4{
+    height: auto;
 }
-
-/* Estilo general */
-
-body {
-
-    padding: var(--size-0);
-    font-family: Arial, Helvetica, sans-serif;
-    gap: var(--size-0);
-
+body{
+    background-image: url("mision1/ASSETS/UIS entrada.png");
     margin: var(--size-0);
     backdrop-filter: blur(4px);
     background-image: url('/ASSETS/UIS entrada.png');
@@ -85,31 +57,23 @@ nav a:hover {
     grid-template-columns: 30% 30% 30%;
     font-size: 17px;
     grid-area: 10px;
-    width: 40%;
+    width: 4
 }
 
-.containelogo {
+body {
+    background-color: var(--e-global-color-322680a6);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: var(--sizeR-m); 
-    height: 100%;
-
 }
-
-.logo {
-    margin: auto;
-    margin-left: 2rem;
-    height: 90%;
-     border-radius: var(--sizeR-l); 
-}
-
-
-/* Diseño moderno para el formulario */
 
 .contain{
     display: flex;
     justify-content: center;
+    margin-bottom: 2%;
+    width: var(--sizePorcen-xl);
+    margin: auto;
     margin-bottom: 2%;
 }
 
@@ -118,11 +82,9 @@ nav a:hover {
     padding: var(--size-s);
     border-radius: var(--size-s);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 40rem;
-    height: 80%;
+    width: var(--sizePorcen-6xl);
+    height: var(--sizePorcen-5xl);
     border: 1px solid var(--e-global-color-40eb6205);
-    margin-top: var(--size-s);
 }
 form{
     justify-content: center;
@@ -149,7 +111,7 @@ input[type="number"],
 input[type="date"],
 input[type="time"],
 textarea {
-    width: 100%;
+    width: var(--sizePorcen-6xl);
     padding: var(--size-s);
     margin-bottom: var(--size-m);
     border: 1px solid var(--e-global-color-40eb6205);
@@ -174,12 +136,8 @@ textarea:focus {
     background-color: var(--e-global-color-secondary);
 }
 
-textarea {
-    resize: none;
-}
-
 input[type="button"] {
-    width: 100%;
+    width: var(--sizePorcen-6xl );
     padding: var(--size-m);
     background-color: var(--e-global-color-primary);
     color: var(--e-global-color-secondary);
@@ -187,7 +145,7 @@ input[type="button"] {
     border-radius: var(--size-s);
     font-size: var(--size-m);
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 input[type="button"]:hover {
@@ -204,37 +162,3 @@ input, textarea {
     padding-top: var(--size-m);
 }
 
-
-footer{
-    display: block;
-    align-items: center;
-    text-align: center;
-    padding: 1%;
-    background-color: #afafaf;
-}
-
-footer button{
-    padding: 10px;
-    border-radius: var(--sizeR-m);
-    border: none;
-    background-color: var(--e-global-color-accent);
-    color: #FFFFFF;
-}
-/* Estilo para navegadores Webkit (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 12px; /* Ancho de la barra de desplazamiento */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color de fondo de la pista */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--e-global-color-accent); /* Color de la barra */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 3px solid #f1f1f1; /* Espacio alrededor de la barra */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--e-global-color-primary); /* Color de la barra al pasar el ratón */
-  }
