@@ -1,32 +1,9 @@
-html {
-    padding: 0;
-    margin: 0;
-}
-/* Estilo general */
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: var(--size-0);
-    padding: var(--size-0);
-    font-family: Arial, Helvetica, sans-serif;
-    gap: var(--size-0);
 
-    background-image: url("mision1/ASSETS/UIS entrada.png");
-}
-
-body {
-    background-color: var(--e-global-color-322680a6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contain{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
+.contain4{
+    height: auto;
     width: var(--sizePorcen-xl);
+    margin: auto;
+    margin-bottom: 2%;
 }
 
 .content_formulario {
@@ -37,7 +14,6 @@ body {
     width: var(--sizePorcen-6xl);
     height: var(--sizePorcen-5xl);
     border: 1px solid var(--e-global-color-40eb6205);
-    margin-top: var(--size-s);
 }
 form{
     justify-content: center;
@@ -114,3 +90,4 @@ input, textarea {
 .content_formulario {
     padding-top: var(--size-m);
 }
+
