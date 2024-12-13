@@ -1,4 +1,100 @@
+
 /* carrusel */
+
+/* :root {
+    --e-global-color-primary: #006837;
+    --e-global-color-secondary: #FFFFFF;
+    --e-global-color-text: #333333;
+    --e-global-color-accent: #99CC33;
+    --e-global-color-accent2: #8fc91a;
+    --e-global-color-40eb6205: #666666;
+    --e-global-color-322680a6: #F7F7F7;
+    --e-global-color-17ab7c36: #006837CC;
+    --e-global-color-black: #000000;
+    --e-global-color-lightgray:#f7f7f75c;
+
+    --size-0: 0;
+    --size-s: 2vh;
+    --size-m: 4vh;
+    --size-l: 6vh;
+    --size-xl: 8vh;
+    --size-xxl: 10vh;
+
+    --sizeR-s: 0.313rem;
+    --sizeR-m: 0.625rem;
+    --sizeR-l: 0.938rem;
+    --sizeR-xl: 1.25rem;
+
+} */
+
+body {
+    padding: var(--size-0);
+    font-family: Arial, Helvetica, sans-serif;
+    gap: var(--size-0);
+    margin: var(--size-0);
+    backdrop-filter: blur(4px);
+    background-image: url('ASSETS/UIS entrada.png');
+
+    background-image: url('/mision1/ASSETS/UIS entrada.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--e-global-color-322680a6);
+    height: var(--size-xl);
+    position: relative; 
+    width: 100%;
+    height:var(--size-xl);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--e-global-color-322680a6);
+    background-color: var(--e-global-color-text);
+    padding: 4px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: var(--e-global-color-accent2);
+}
+
+.optionnav {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 30% 30% 30%;
+    font-size: 17px;
+    grid-area: 10px;
+    width: 40%;
+}
+
+.containelogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--sizeR-m); 
+    height: 100%;
+
+}
+
+.logo {
+    margin: auto;
+    margin-left: 2rem;
+    height: 90%;
+     border-radius: var(--sizeR-l); 
+} */
+
+/* carruse */
+
+
 .carrusel{
     display: flex;
     align-items: center;
