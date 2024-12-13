@@ -27,7 +27,7 @@ html, body {
 
     background-image: url("mision1/ASSETS/UIS entrada.png");
 
-
+}
 body {
     background-color: var(--e-global-color-322680a6);
     display: flex;

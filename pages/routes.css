@@ -1,5 +1,17 @@
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 60%;
-      margin: auto;
-  }
+* {
+    margin: var(--size-0);
+    padding: var(--size-0);
+    box-sizing: border-box;
+}
+
+.banner{
+  display: flex;
+  width: var(--sizePorcen-6xl);
+  height: 50vh;
+}
+
+ .banner img{
+  display: flex;
+  height: auto;
+  width: var(--sizePorcen-6xl);
+} 

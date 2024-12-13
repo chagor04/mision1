@@ -1,110 +1,20 @@
-/* :root {
-    --e-global-color-primary: #006837;
-    --e-global-color-secondary: #FFFFFF;
-    --e-global-color-text: #333333;
-    --e-global-color-accent: #99CC33;
-    --e-global-color-accent2: #8fc91a;
-    --e-global-color-40eb6205: #666666;
-    --e-global-color-322680a6: #F7F7F7;
-    --e-global-color-17ab7c36: #006837CC;
-    --e-global-color-black: #000000;
-    --e-global-color-lightgray:#f7f7f75c;
-
-    --size-0: 0;
-    --size-s: 2vh;
-    --size-m: 4vh;
-    --size-l: 6vh;
-    --size-xl: 8vh;
-    --size-xxl: 10vh;
-
-    --sizeR-s: 0.313rem;
-    --sizeR-m: 0.625rem;
-    --sizeR-l: 0.938rem;
-    --sizeR-xl: 1.25rem;
-
-} */
-
-body {
-    padding: var(--size-0);
-    font-family: Arial, Helvetica, sans-serif;
-    gap: var(--size-0);
-    margin: var(--size-0);
-    backdrop-filter: blur(4px);
-    background-image: url('/mision1/ASSETS/UIS entrada.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
-
-/* nav {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:var(--e-global-color-322680a6);
-    height: var(--size-xl);
-    position: relative; 
-    width: 100%;
-    height:var(--size-xl);
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--e-global-color-322680a6);
-    background-color: var(--e-global-color-text);
-    padding: 4px;
-}
-
-nav a:hover {
-    cursor: pointer;
-    background-color: var(--e-global-color-accent2);
-}
-
-.optionnav {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: 30% 30% 30%;
-    font-size: 17px;
-    grid-area: 10px;
-    width: 40%;
-}
-
-.containelogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: var(--sizeR-m); 
-    height: 100%;
-
-}
-
-.logo {
-    margin: auto;
-    margin-left: 2rem;
-    height: 90%;
-     border-radius: var(--sizeR-l); 
-} */
-
-/* carruse */
-
+/* carrusel */
 .carrusel{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.596);
-    width: 100%;
+    width: var(--sizePorcen-6xl);
     border: 2px thick rgba(255, 255, 255, 0.596);
     box-shadow: 
         0 0 10px rgba(255, 255, 255, 0.6),
         0 0 20px rgba(255, 255, 255, 0.4),
         0 0 30px rgba(255, 255, 255, 0.2);
     border-radius: 4px;  
-
 }
-  /* Contenedor de slider */ 
 
+/* Contenedor de slider */ 
 ul, li {
       padding: var(--size-0);
       margin: var(--size-0);
@@ -113,7 +23,7 @@ ul, li {
   
 ul.slider{
     position: relative;
-    width: 100%;
+    width: var(--sizePorcen-6xl);
     height: 450px;
 }
   
@@ -125,11 +35,12 @@ ul.slider li {
       width: inherit; 
       height: inherit;
       transition: opacity .5s;
-      background:#fff;
-}/* carrusel */
-  
+      background:var(--e-global-color-secondary);
+}
+
+/* carrusel */
 ul.slider li img{
-    width: 100%;
+    width: var(--sizePorcen-6xl);
     height: 450px;
     object-fit: cover;
     margin: auto; 
@@ -156,87 +67,28 @@ ul.slider li:target {
 
 .menu li a{
     display: inline-block;
-    color: white;
+    color: var(--e-global-color-secondary);
     text-decoration: none;
     background-color: grey;
     padding: var(--sizeR-m);
     width: var(--sizeR-xl);
     height: var(--sizeR-xl);
     font-size:var(--sizeR-xl);
-    border-radius: 100%;
-}
-
-/* cards */
-
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: var(--sizeR-xl);
-    gap:4rem;
-}
-
-.container img{
-    border-radius: var(--sizeR-l);
-    height: 80%;
-    width: auto;
-    margin: auto;
-}
-
-.container_target {
-    display: grid;
-    grid-template-columns: 60% 40%; 
-    padding: 0.1%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: var(--sizeR-l);
-    background: var( --e-global-color-lightgray);
-    height: 25rem;
-    width: auto;
-    margin: auto;
-}
-
-.routinfo{
-    margin-top: 8%;
-}
-
-.routinfo button{
-    padding: 10px;
-    margin-top: 50px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--e-global-color-17ab7c36);
-    color: #FFFFFF;
-}
-
-.routinfo button:hover{
-    background-color: var(--e-global-color-primary);
-}
-
-.ver_mas{
-    margin-bottom: 30px;
-    padding: 10px;
-    border-radius: var(--sizeR-m);
-    border: none;
-    background-color: var(--e-global-color-17ab7c36);
-    color: #FFFFFF;
-}
-
-.ver_mas:hover{
-    background-color: var(--e-global-color-primary);
+    border-radius: var(--sizePorcen-6xl);
 }
 
 footer{
     display: block;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: var( --sizeR-m);
     background-color: #afafaf;
 }
 
 footer button{
-    padding: 10px;
+    padding: var( --sizeR-m);
     border-radius: var(--sizeR-m);
     border: none;
     background-color: var(--e-global-color-accent);
-    color: #FFFFFF;
+    color: var(--e-global-color-secondary);
 }
