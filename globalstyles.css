@@ -173,8 +173,6 @@ img.lupa {
 
  .container img {
     border-radius: var(--sizeR-l);
-    
-    width: 80%;
     margin: auto;
 } 
 
