@@ -1,6 +1,77 @@
 
 .contain4{
     height: auto;
+}
+body{
+    background-image: url("mision1/ASSETS/UIS entrada.png");
+    margin: var(--size-0);
+    backdrop-filter: blur(4px);
+    background-image: url('/ASSETS/UIS entrada.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid;
+}
+
+   
+
+
+
+body {
+    background-color: var(--e-global-color-322680a6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--e-global-color-322680a6);
+    height: var(--size-xl);
+    position: relative; 
+    width: 100%;
+    height:var(--size-xl);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--e-global-color-322680a6);
+    background-color: var(--e-global-color-text);
+    padding: 4px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: var(--e-global-color-accent);
+}
+
+.optionnav {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 30% 30% 30%;
+    font-size: 17px;
+    grid-area: 10px;
+    width: 4
+}
+
+body {
+    background-color: var(--e-global-color-322680a6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
     width: var(--sizePorcen-xl);
     margin: auto;
     margin-bottom: 2%;
