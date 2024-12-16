@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleforms.css">
     <link rel="stylesheet" href="../globalstyles.css">
+    <script defer src="formsmain.js"></script>
     <title>UIS</title>
 </head>
 <body>
@@ -40,23 +41,38 @@
     </header>
     <section class="contain4">
         <div class="content_formulario">
-        <form action="">
-            <h1> Formulario </h1>
-            <label for="">Nombre:</label><br>
-            <input type="text" name="" id=""><br>
-            <label for=""> Correo electronico: </label>
-            <input type="email" name="" id=""><br>
-            <label for=""> Telefono:</label>
-            <input type="number" name="" id=""><br>
-            <label for=""> Fecha y hora : </label>  
-            <input type="date" name="" id="">
-            <input type="time" name="" id="">
-            <label for=""> Comentarios y PQR: </label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escriba aqui sus comentarios y quejas con el servicio "></textarea><br>
-            <input type="button" value="Enviar">
-        </form>
+            <form id="form">
+                <h1>Formulario</h1>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name"><br>
+    
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email"><br>
+    
+                <label for="phone">Teléfono:</label><br>
+                <input type="number" id="phone"><br>
+    
+                <label for="date">Fecha:</label><br>
+                <input type="date" id="date"><br>
+    
+                <label for="comments">Comentarios y PQR:</label><br>
+                <textarea id="comments" cols="30" rows="10" placeholder="Escribe aquí tus comentarios y quejas"></textarea><br>
+    
+                <h4>Calificación del servicio</h4>
+                <div class="stars">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                </div>
+    
+                <input type="button" value="Enviar" id="submit">
+                <input type="button" value="Mostrar comentarios" onclick="window.location.href='Comentarios.html';" class="Mostrar">
+            </form>
         </div>
     </section>
+    
     <footer>
         <div class="contacus">
             <section class="footlogos">
