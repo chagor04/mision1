@@ -223,7 +223,7 @@ width: 100%;
 
 
 
-footer {
+.footer {
     display: grid;
     justify-content: space-around;
     grid-template-columns: 30% 70%;

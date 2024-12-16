@@ -1,54 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Carousel/Slideshow</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="routes.css">
     <link rel="stylesheet" href="../globalstyles.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo-container">
-                <img src="https://web.uis.edu.co/wp-content/uploads/elementor/thumbs/Logo-UIS-web-qbqj494k91py9kvbai0ukya46twhbb1tj22br6je4k.webp"
-                    alt="Logo UIS" class="logo">
-            </div>
-            <!-- <p>Univercida Industrial de santander</p>  -->
-            <div>
-                <ul class="nav-links2">
-                    <li><a href="#">Trasnparencia</a></li>
-                    <li><a href="#">Atención a la ciudadania</a></li>
-                    <li><a href="#">participa</a></li>
-                    <li><a href="/pages/forms.html">PQRDS</a></li>
-                </ul>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li> <a href="#rutas" style="color: var(--e-global-color-17ab7c36);">Rutas</a></li>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#rutas">Rutas</a></li>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <img width="26" height="26"
-                        src="https://uis.edu.co/wp-content/uploads/2020/07/Icono-Accesos-Rapidos-1.png">
-                    <img class="lupa" width="26" height="26"
-                        src="https://uis.edu.co/wp-content/uploads/2020/07/Icono-Buscador-2024.png">
-                </ul>
-            </div>
-        </nav>
-        <div>
+    <header id="nav" class="nav-bar"></header>
 
-        </div>
-    </header>
-
-
-    <div class="banner">
+    <div  class="banner">
         <img src="https://uis.edu.co/wp-content/uploads/2023/10/Atajos-Universidad-Industrial-de-Santander-01.png">
     </div>
 
-
-    <div class="container">
-        <div class="container_target">
+    <div id="target" class="container">
+        <!-- <div class="container_target">
 
             <a href="https://maps.app.goo.gl/kLsujAhVP4U4BSLf8" target="_blank">
 
@@ -110,17 +78,12 @@
                     <button class="cp">Ver Estacion</button>
                 </ul>
             </section>
-        </div>
+        </div> -->
 
     </div>
 
-
-    <!-- <footer>
-        <p> &copy;Derechos reservados nombes integrantes </p>
-        <a href="./pages/forms.html"><button>PQR</button></a>
-    </footer> -->
-    <footer>
-        <div class="contacus">
+    <div class="footer" id="foot">
+        <!-- <div class="contacus">
             <section class="footlogos">
                 <img src="https://web.uis.edu.co/wp-content/uploads/elementor/thumbs/Logo-gov.co_-qboxd6ttey35f7ao1708039nhgmrev05ydopnb66yi.webp"
                     alt="">
@@ -159,7 +122,7 @@
                 <p>+57 (607) 634 4000</p>
             </section>
             <section>
-                <a class="pqrs cp">PQRDS ></a>
+                <a class="pqrs" href="/pages/forms.html">PQRDS ></a>
             </section>
             <section>
                 <p>Descargue nuestras apps:</p>
@@ -172,26 +135,27 @@
             </section>
             <section>
                 
-                <a  class="pqrs cp" href="forms.html">App PQRS</a>
+
+                <a class="pqrs" href="/pages/forms.html">App PQRS</a>
             </section>
 
         </div>
         <div class="information">
             <section class="contacts">
                 <div>
-                    <h4>Campus Central UIS</h4>
+                    <p>Campus Central UIS</p>
                     <p>Carrera 27 Calle 9</p>
                     <p>Bucaramanga</p>
                     <p>PBX: (+57) (7) 634 4000</p>
                 </div>
                 <div>
-                    <h4>Instituto de Lenguas</h4>
+                    <p>Instituto de Lenguas</p>
                     <p>Carrera 27 Calle 9</p>
                     <p>Bucaramanga</p>
                     <p>PBX: (+57) (7) 634 4000</p>
                 </div>
                 <div>
-                    <h4>Horario de atención:</h4>
+                    <p>Horario de atención:</p>
                     <p>Lunes a viernes</p>
                     <p>7:00 a.m. - 12:00 m.</p>
                     <p>2:00 p.m. - 5:00 p.m.</p>
@@ -199,14 +163,14 @@
             </section>
             <section class="headquarters">
                 <div>
-                    <h4>Sede Área Metropolitana de Bucaramanga</h4>
+                    <p>Sede Área Metropolitana de Bucaramanga</p>
                     <p>Bucarica</p>
                     <p>Campus central</p>
                     <p>Facultad de Salud</p>
                     <p>Guatiguará</p>
                 </div>
                 <div>
-                    <h4>Sedes Regionales</h4>
+                    <p>Sedes Regionales</p>
                     <p>Barbosa</p>
                     <p>Barrancabermeja</p>
                     <p>Málaga</p>
@@ -215,7 +179,7 @@
                     <p>Bogotá</p>
                 </div>
                 <div>
-                    <h4>Programas</h4>
+                    <p>Programas</p>
                     <p>Pregrados</p>
                     <p>Posgrados</p>
                     <p>Curso PreUIS</p>
@@ -223,7 +187,7 @@
                     <p>Idiomas</p>
                 </div>
                 <div>
-                    <h4>Perfiles</h4>
+                    <p>Perfiles</p>
                     <p>Aspirantes</p>
                     <p>Estudiantes</p>
                     <p>Profesores</p>
@@ -235,7 +199,7 @@
             </section>
             <section class="policies">
                 <div class="policies1">
-                    <h4>Transparencia y acceso a la información pública</h4>
+                    <p>Transparencia y acceso a la información pública</p>
                     <p>Política de privacidad y tratamiento de datos</p>
                     <p>Atención y servicios a la ciudadanía</p>
                     <p>Sistema de gestión de calidad</p>
@@ -243,7 +207,7 @@
                     <p>Política de derechos de autor</p>
                 </div>
                 <div class="policies2">
-                    <h4>Acuerdos Conciliatorios</h4>
+                    <p>Acuerdos Conciliatorios</p>
                     <p>Términos y condiciones</p>
                     <p>Normativa aplicable</p>
                     <p>Veeduría Ciudadana</p>
@@ -251,7 +215,7 @@
                     <p>Pagos y ventas</p>
                 </div>
                 <div>
-                    <h4>Mesa de Ayuda</h4>
+                    <p>Mesa de Ayuda</p>
                     <p>Convocatorias</p>
                     <p>Mapa del sitio</p>
                     <p>Políticas UIS</p>
@@ -259,8 +223,10 @@
                     <p>Participa</p>
                 </div>
             </section>
-        </div>
+        </div> -->
 
-    </footer>
+    </div >
+    <script src="/components/components.js"></script>
     <script src="https://kit.fontawesome.com/ad1403f54c.js" crossorigin="anonymous"></script>
 </body>
+</html>
