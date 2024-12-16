@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../globalstyles.css">
+    <title>Mostrar Comentarios</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+            color: var( --e-global-color-primary);
+        }
+        .card {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: var(--sizeR-xxl);
+            margin: 10px 0;
+            background-color: var(--e-global-color-lightgray);
+            border-radius: 8px;
+            border: none;
+        }
+        .card h3 {
+            margin: 0;
+        }
+        .card:hover {   
+    grid-template-columns: 60% 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: var(--sizeR-l);
+    transition-duration: 1.5s;
+    background: var(--e-global-color-322680a6);
+    width: auto;
+    margin: auto;
+}
+        .stars {
+            color: gold;
+            font-size: var(--size-m );
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comentarios</h1>
+    <div id="comments-container"></div>
+
+    <script>
+        // Función para cargar y mostrar los comentarios desde localStorage
+        window.onload = function() {
+            const commentsContainer = document.getElementById('comments-container');
+            const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+
+            if (storedComments.length === 0) {
+                commentsContainer.innerHTML = '<p>No hay comentarios guardados.</p>';
+            } else {
+                storedComments.forEach(comment => {
+                    const card = document.createElement('div');
+                    card.classList.add('card');
+
+                    card.innerHTML = `
+                        <h3>${comment.name}</h3>
+                        <p><strong>Comentarios:</strong> ${comment.comments}</p>
+                        <div class="stars">${'&#9733;'.repeat(comment.rating)}</div>
+                    `;
+
+                    commentsContainer.appendChild(card);
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
